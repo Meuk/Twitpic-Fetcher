@@ -1,2 +1,16 @@
-= TwitPic Fetcher =
+TwitPic Fetcher
+=================
 Since the arrival of Google+, I wanted to get my pictures (2 years worth of simple snaps) from twitpic, and import them into Google+. Sadly, there was no easy way to export the images to zip or other format, so I took matters in my own hands, and decided to create a script that fetches my twitpic and saves them to filestorage.
+
+a few images
+=================
+I had a total of 172 pictures on twitpic that needed to be downloaded individualy to my harddisk. Not a gigantic ammount, but still, it would take a lot of patience from me to fetch them one by one. That's something I don't have, so I started to research options to run them parallel.
+
+hi gearman ;]
+=================
+I found gearman! A job queue server, that handles jobs using workers. Installing it was easy (followed lorna's guide at http://www.lornajane.net/posts/2011/Installing-Gearman-for-PHP-and-Ubuntu) and soon I was expirimenting, using the docs and guides online. The result?
+
+172 images in 40 seconds
+=================
+That is 180 external HTTP calls (including the paging the Twitpic api uses) in 40 seconds, or 4.5 calls / second. Not bad!
+
