@@ -1,0 +1,2 @@
+= TwitPic Fetcher =
+Since the arrival of Google+, I wanted to get my pictures (2 years worth of simple snaps) from twitpic, and import them into Google+. Sadly, there was no easy way to export the images to zip or other format, so I took matters in my own hands, and decided to create a script that fetches my twitpic and saves them to filestorage.
