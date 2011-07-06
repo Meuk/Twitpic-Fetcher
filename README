@@ -8,9 +8,12 @@ I had a total of 172 pictures on twitpic that needed to be downloaded individual
 
 hi gearman ;]
 =================
-I found gearman! A job queue server, that handles jobs using workers. Installing it was easy (followed lorna's guide at http://www.lornajane.net/posts/2011/Installing-Gearman-for-PHP-and-Ubuntu) and soon I was expirimenting, using the docs and guides online. The result?
+I found gearman! A job queue server, that handles jobs using workers. Installing it was easy (followed lorna's guide at http://www.lornajane.net/posts/2011/Installing-Gearman-for-PHP-and-Ubuntu thanks!) and soon I was expirimenting, using the docs and guides online. The result?
 
 172 images in 40 seconds
 =================
 That is 180 external HTTP calls (including the paging the Twitpic api uses) in 40 seconds, or 4.5 calls / second. Not bad!
 
+meh, it's still slow
+=================
+I know right?! I will try to update the code and add improvements over the course of time. Fixes / additions are welcome!
